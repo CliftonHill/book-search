@@ -1,0 +1,62 @@
+body {
+  background-color: #4968a7;
+background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+main {
+  width: 60%;
+  margin: 1rem auto 1rem auto;
+}
+
+.menu {
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding: 0.2rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #5a0c0c;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 1rem;
+
+}
+
+.menu a:hover {
+  color: black;
+}
+
+
+.tile {
+  width: 10rem;
+  display: inline-block;
+  float: left;
+  height: 16rem;
+  margin: 1rem;
+  box-shadow: 0 0 1rem black;
+}
+
+/* Clearfix */
+.tile:after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.tile-contents {
+  text-align: center;
+  opacity: 60%;
+}
+
+.tile-contents:hover {
+  opacity: 100%;
+}
+
+.tile img {
+  height: 13rem;
+}
