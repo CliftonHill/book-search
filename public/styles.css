@@ -1,6 +1,6 @@
 body {
   background-color: #4968a7;
-background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
@@ -8,6 +8,12 @@ main {
   width: 60%;
   margin: 1rem auto 1rem auto;
 }
+
+/* nav { use or not? */
+  /* box-shadow: 0 0.1rem 0.3rem black;
+
+  }*/
+
 
 .menu {
   height: 100%;
@@ -34,7 +40,6 @@ main {
 
 .tile {
   width: 10rem;
-  display: inline-block;
   float: left;
   height: 16rem;
   margin: 1rem;
@@ -59,4 +64,100 @@ main {
 
 .tile img {
   height: 13rem;
+}
+
+.price {
+  margin-top: 0.5rem;
+  color: #f4c60b;
+}
+
+.list-price {
+  color: #cccccc;
+  text-decoration: line-through;
+  font-size: small;
+}
+
+/*modal */
+.modalBackground {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: +100;
+  background: rgba(0,0,0,0.7);
+}
+
+.showModal-true {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modalInner {
+  width: 30rem;
+  min-height: 20rem;
+  background: #4968a7;
+  margin: 5rem auto;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.modalLeft {
+  background: rgba(0,0,0,0.2);
+  width: 30%;
+  height: 100%;
+}
+
+.modalImage img {
+  width: 100%;
+  border-top-left-radius: 0.25rem;
+}
+
+.modalRight {
+  padding: 0 1rem;
+  width: 70%;
+  height: 100%;
+  text-align: center;
+}
+
+/* button styling */
+.more, .exit {
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.more {
+    border: 1px solid black;
+    background: none;
+}
+
+.more:hover {
+  background-color: gray;
+}
+
+.more:active {
+  background-color: white;
+}
+
+.exit-spacing {
+  margin-top: 2rem;
+}
+
+.exit {
+  color: #cccccc;
+  cursor: default;
+  font-family: "arial", sans-serif;
+  padding: 0.2rem 1rem;
+}
+
+.exit:hover {
+  background: rgba(0,0,0,.2);
+  color: black;
+}
+
+.exit:active {
+  color: #cccccc;
 }
