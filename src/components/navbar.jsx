@@ -9,10 +9,9 @@ const styleObj = {
 export default function NavBar() {
   return (
     <nav style={styleObj} >
+      <h1 style={{display: "inline-block", margin: "0.2rem", fontSize: "1.6rem"}}>Book Search</h1>
       <div className="menu">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="/">Home</a>
       </div>
 
     </nav>

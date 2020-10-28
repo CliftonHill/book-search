@@ -5,14 +5,10 @@ body {
 }
 
 main {
-  width: 60%;
+  width: 80%;
+  min-height: 30rem;
   margin: 1rem auto 1rem auto;
 }
-
-/* nav { use or not? */
-  /* box-shadow: 0 0.1rem 0.3rem black;
-
-  }*/
 
 
 .menu {
@@ -39,11 +35,20 @@ main {
 
 
 .tile {
-  width: 10rem;
+  width: 20rem;
   float: left;
-  height: 16rem;
+  height: 14rem;
   margin: 1rem;
   box-shadow: 0 0 1rem black;
+
+}
+
+.tile-contents {
+  height: 14rem;
+  display: flex;
+  flex-direction: row;
+  opacity: 70%;
+  cursor: pointer;
 }
 
 /* Clearfix */
@@ -53,9 +58,19 @@ main {
   display: table;
 }
 
-.tile-contents {
+.tile-left {
+  background: rgba(0,0,0,0.2);
+  width: 30%;
+  height: 100%;
   text-align: center;
-  opacity: 60%;
+
+}
+
+.tile-right {
+  padding: 0 1rem;
+  width: 70%;
+  height: 100%;
+  white-space: pre-wrap;
 }
 
 .tile-contents:hover {
@@ -63,7 +78,7 @@ main {
 }
 
 .tile img {
-  height: 13rem;
+  width: 100%;
 }
 
 .price {
@@ -97,7 +112,7 @@ main {
 
 .modalInner {
   width: 30rem;
-  min-height: 20rem;
+  height: 40rem;
   background: #4968a7;
   margin: 5rem auto;
   border-radius: 0.25rem;
@@ -117,10 +132,21 @@ main {
 }
 
 .modalRight {
-  padding: 0 1rem;
+  padding: 1rem;
   width: 70%;
   height: 100%;
   text-align: center;
+}
+
+.modalDescription {
+  white-space: pre-wrap;
+}
+
+.text-low-emphasis {
+  font-family: "arial", sans-serif;
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: gray;
 }
 
 /* button styling */
@@ -143,7 +169,7 @@ main {
 }
 
 .exit-spacing {
-  margin-top: 2rem;
+  margin-top: 0.75rem;
 }
 
 .exit {
@@ -160,4 +186,56 @@ main {
 
 .exit:active {
   color: #cccccc;
+}
+
+/* ***RESIZING*** */
+/* FOR TABLET */
+@media screen and (max-width: 1024px) {
+  main {
+    width: 90%;
+  }
+
+}
+
+/* FOR PHONE */
+@media screen and (max-width: 767px) {
+  main {
+    min-width: 20rem;
+    width: 95%;
+  }
+  h1, nav {
+    font-size: 120%;
+  }
+
+  nav {
+    height: 3rem;
+  }
+
+  .modalInner {
+    width: 90%;
+    height: 90%;
+    margin: 5rem auto;
+    font-size: 110%;
+  }
+  .text-low-emphasis {
+    font-size: 90%;
+  }
+
+  .tile {
+    width: 90%;
+    float: none;
+    margin: 1rem auto;
+  }
+
+  .tile-left {
+    width: 20%;
+  }
+
+  .tile-right {
+    width: 80%;
+  }
+
+  .tile-contents {
+    font-size: 1.2rem;
+  }
 }

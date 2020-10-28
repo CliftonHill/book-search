@@ -1,16 +1,42 @@
+# Book Search
+Search for books.
+* **by Clifton Hill**
+* cliftonhhill [@] gmail [dot] com / [GitHub Profile](https://github.com/CliftonHill) / [LinkedIn](https://www.linkedin.com/in/crusadingthought)
+* App live at: TBD
+
+## Introduction
+Solo Project for Chingu Voyager 25, due 10/27/20. This project utilized code from a partially completed book review list project that was experimenting with React components. This project uses Google Books API to search for books with matching terms, display the top 10 results with a brief summary. Clicking on the book tile provides a more in depth summary via a modal, clicking on the Book Page Link takes to full Google Books Preview page.
+* Made with React, material-UI, super-agent, Google Books API, Node, HTML, CSS.
+* Code is © 2020 by Clifton Hill
+
+## How to Run Project locally
+1. Clone Project locally
+2. run `npm install` 
+3. `npm start`
+
+## Features:
+* Search Google Books API, display visual results, get further details, link to Google Books Preview page
+* Responsive website: ready for desktop or mobile use
+
+## Future improvements:
+* Save to a personal library (integrate database)
+* Add self rating Feature
+* Add community review score
+* Clean up CSS and refine/break down components to be modular (include CSS styles in modularity)
+
+## Bugs fixed:
+* Reset search hook values to remedy display search result problem
+
+## Bugs:
+* submit button not always responsive to mouse click. Pressing enter in search bar always works. Not sure why. Issue developed after CSS styles added to search bar. Firefox appears more responsive, but not consistent. Button does not display animation in Chrome, while it does initially in Firefox, it also stops responding there.
+* edit React Button "book page" to reflect React button effects (hover, click ripple, etc.) Button currently is just static.
+* search terms inconsistent in their result. "dog" always netted a result, "sanderson" frequently returned an error. <Still need to detail how this was corrected>
+
+---
+## REACT BOILERPLATE
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
 ### `npm test`
 

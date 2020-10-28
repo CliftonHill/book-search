@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import TileSummary from "./tile-summary";
 
 const styleObj= {
@@ -10,10 +10,10 @@ export default function Tile(props) {
 
   return(
     <div style={styleObj} className="tile">
-      <div className={`tile-contents ${props.id}`} >
 
-        <TileSummary image={props.image} stars={props.stars} title={props.title} author={props.author} listPrice={props.listPrice} price={props.price} review={props.review} id={props.id}/>
-      </div>
+
+        <TileSummary image={props.image} stars={props.stars} title={props.title} authors={props.authors} publishDate={props.publishDate} description={props.description} previewLink={props.previewLink} id={props.id} publisher={props.publisher}/>
+
 
     </div>
 
