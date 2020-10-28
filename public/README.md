@@ -2,7 +2,7 @@
 Search for books.
 * **by Clifton Hill**
 * cliftonhhill [@] gmail [dot] com / [GitHub Profile](https://github.com/CliftonHill) / [LinkedIn](https://www.linkedin.com/in/crusadingthought)
-* App live at: TBD
+* App live at: <https://cliftonhill.github.io/book-search/>
 
 ## Introduction
 Solo Project for Chingu Voyager 25, due 10/27/20. This project utilized code from a partially completed book review list project that was experimenting with React components. This project uses Google Books API to search for books with matching terms, display the top 10 results with a brief summary. Clicking on the book tile provides a more in depth summary via a modal, clicking on the Book Page Link takes to full Google Books Preview page.
@@ -11,7 +11,7 @@ Solo Project for Chingu Voyager 25, due 10/27/20. This project utilized code fro
 
 ## How to Run Project locally
 1. Clone Project locally
-2. run `npm install` 
+2. run `npm install`
 3. `npm start`
 
 ## Features:
@@ -26,11 +26,11 @@ Solo Project for Chingu Voyager 25, due 10/27/20. This project utilized code fro
 
 ## Bugs fixed:
 * Reset search hook values to remedy display search result problem
+* Search button not consistently working with clicking. Discovered that menu button field was partly obscuring search button at small screen widths. Fixed CSS field overlap. Issue appears resolved.
 
 ## Bugs:
-* submit button not always responsive to mouse click. Pressing enter in search bar always works. Not sure why. Issue developed after CSS styles added to search bar. Firefox appears more responsive, but not consistent. Button does not display animation in Chrome, while it does initially in Firefox, it also stops responding there.
 * edit React Button "book page" to reflect React button effects (hover, click ripple, etc.) Button currently is just static.
-* search terms inconsistent in their result. "dog" always netted a result, "sanderson" frequently returned an error. <Still need to detail how this was corrected>
+* search terms inconsistent in their result. "dog" always netted a result, "sanderson" frequently returned an error. -->Still need to detail how this was corrected
 
 ---
 ## REACT BOILERPLATE
