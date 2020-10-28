@@ -11,7 +11,7 @@ export default function NavBar() {
     <nav style={styleObj} >
       <h1 style={{display: "inline-block", margin: "0.2rem", fontSize: "1.6rem"}}>Book Search</h1>
       <div className="menu">
-        <a href="/">Home</a>
+        <a href="/book-search">Home</a>
       </div>
 
     </nav>
