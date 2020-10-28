@@ -7,7 +7,8 @@ const objStyle = {
   paddingTop: "0.5rem",
   position: "absolute",
   bottom: "0",
-  height: "4rem"
+  height: "4rem",
+  marginTop: "3rem"
 }
 
 export default function Footer () {
